@@ -16,81 +16,81 @@
 
 <body>
   <header class="p-5 container-fluid d-flex align-items-center flex-column bg-light">
-    <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <h1>Work Day Scheduler</h1>
+    <p id="opening"> A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
-  <div class="container mt-5">
+  <div class="container mt-lg-5 mt-3">
     <div class="row">
       <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center hour"><span>9:00 AM</span></div>
-      <textarea class="col-lg-10 col-8 p-4 past" id="schedule" data-time="9:00">test</textarea>
-      <div class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
-        <div>SAVE</div>
-      </div>
+      <textarea class="col-lg-10 col-8 p-4" id="9" data-set="hour-block"></textarea>
+      <button class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center" id="btn9">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
 
-    <div class="row" id="10am">
+    <div class="row">
       <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center hour"><span>10:00 AM</span></div>
-      <textarea class="col-lg-10 col-8 p-4 past" id="schedule" data-time="10:00">test</textarea>
-      <div class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
-        <div>SAVE</div>
-      </div>
+      <textarea class="col-lg-10 col-8 p-4" id="10" data-set="hour-block"></textarea>
+      <button class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
 
-    <div class="row" id="11am">
+    <div class="row">
       <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center hour"><span>11:00 AM</span></div>
-      <textarea class="col-lg-10 col-8 p-4 past" id="schedule" data-time="11:00">test</textarea>
-      <div class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
-        <div>SAVE</div>
-      </div>
+      <textarea class="col-lg-10 col-8 p-4" id="11" data-set="hour-block"></textarea>
+      <button class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
 
-    <div class="row" id="12pm">
+    <div class="row">
       <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center hour"><span>12:00 PM</span></div>
-      <textarea class="col-lg-10 col-8 p-4 past" id="schedule" data-time="12:00">test</textarea>
-      <div class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
-        <div>SAVE</div>
-      </div>
+      <textarea class="col-lg-10 col-8 p-4" id="12" data-set="hour-block"></textarea>
+      <button class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
 
-    <div class="row" id="1pm">
+    <div class="row">
       <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center hour"><span>1:00 PM</span></div>
-      <textarea class="col-lg-10 col-8 p-4 past" id="schedule" data-time="13:00">test</textarea>
-      <div class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
-        <div>SAVE</div>
-      </div>
+      <textarea class="col-lg-10 col-8 p-4" id="13" data-set="hour-block"></textarea>
+      <button class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
 
-    <div class="row" id="2pm">
+    <div class="row">
       <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center hour"><span>2:00 PM</span></div>
-      <textarea class="col-lg-10 col-8 p-4 past" id="schedule" data-time="14:00">test</textarea>
-      <div class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
-        <div>SAVE</div>
-      </div>
+      <textarea class="col-lg-10 col-8 p-4" id="14" data-set="hour-block"></textarea>
+      <button class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
 
-    <div class="row" id="3pm">
+    <div class="row">
       <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center hour"><span>3:00 PM</span></div>
-      <textarea class="col-lg-10 col-8 p-4" id="schedule" data-time="15:00">test</textarea>
-      <div class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
-        <div>SAVE</div>
-      </div>
+      <textarea class="col-lg-10 col-8 p-4" id="15" data-set="hour-block"></textarea>
+      <button class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
 
-    <div class="row" class="time-block">
+    <div class="row">
       <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center hour"><span>4:00 PM</span></div>
-      <textarea class="col-lg-10 col-8 p-4 future" id="schedule" data-time="16:00">test</textarea>
-      <div class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
-        <div>SAVE</div>
-      </div>
+      <textarea class="col-lg-10 col-8 p-4" id="16" data-set="hour-block"></textarea>
+      <button class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
 
-    <div class="row" class="time-block">
+    <div class="row">
       <div class="col-lg-1 col-2 d-flex justify-content-center align-items-center hour"><span>5:00 PM</span></div>
-      <textarea class="col-lg-10 col-8 p-4 future" id="schedule" data-time="17:00">test</textarea>
-      <div class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
-        <div>SAVE</div>
-      </div>
+      <textarea class="col-lg-10 col-8 p-4" id="17" data-set="hour-block"></textarea>
+      <button class="col-lg-1 col-2 bg-info saveBtn d-flex justify-content-center align-items-center">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
   </div>
 

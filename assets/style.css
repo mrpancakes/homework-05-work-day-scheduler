@@ -51,7 +51,7 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
@@ -62,4 +62,19 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
   cursor: pointer;
+}
+
+#opening {
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    margin: auto;
+  }
+
+  .container {
+    width: 90%;
+    margin-top:
+  }
 }
