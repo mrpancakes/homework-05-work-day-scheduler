@@ -2,8 +2,6 @@ let today = moment(); // Current day's date
 let currentHour = moment().hours(); // Current day's time
 $("#currentDay").text(today.format("dddd, MMMM, Do")); // Displays the current date in the header
 
-// $("#9").val(localStorage.getItem("9")); // displays just the 9am hour. Try to loop this
-
 $(".saveBtn").click(function () {
     let btn = $(this);
     let textarea = btn.siblings("textarea");   // grab the sibling of the button with the tag name of textarea
@@ -11,6 +9,7 @@ $(".saveBtn").click(function () {
     let time = textarea.attr("id");
     localStorage.setItem(time, textareaValue);
 });
+
 
 function displayEntries() {
     const localStorageKeys = Object.entries(localStorage);
@@ -22,17 +21,17 @@ function displayEntries() {
         console.log(id, value);
         $(`#${id}`).val(value);
     }
-  }
+}
 
 
 $("textarea").each(function () {
     let hourBlock = $(this).attr("id");
 
-    if (hourBlock < currentHour) {
+    if (currentHour > hourBlock) {
         $(this).addClass("past");
         $(this).removeClass("present");
         $(this).removeClass("future");
-    } else if (hourBlock > currentHour) {
+    } else if (currentHour < hourBlock) {
         $(this).addClass("future");
         $(this).removeClass("past");
         $(this).removeClass("present");
@@ -42,6 +41,7 @@ $("textarea").each(function () {
         $(this).removeClass("future");
     }
 })
+
 
 
  displayEntries();
